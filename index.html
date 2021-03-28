@@ -16,18 +16,76 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <span class="logo"> </span>
-        <button
-          type="button"
-          class="mobile-menu-btn"
-          aria-label="Открыть мобильное меню"
-        ></button>
+        <div class="mobile-header">
+          <span class="logo">
+            <svg class="logo__icon" width="69" height="56">
+              <use href="./images/icons/icons.svg#icon-logo"></use>
+            </svg>
+          </span>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            aria-label="Открыть мобильное меню"
+          >
+            <svg class="btn__icon" width="40" height="40">
+              <use href="./images/icons/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu-backdrop">
+          <aside class="mobile-menu">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">О нас</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Услуги и цены</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Мастера</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a href="tel:+380441111111" class="contacts__link"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="" class="contacts__link">онлайн-запись</a>
+              </li>
+            </ul>
+            <ul class="aside-socials__list">
+              <li class="aside-socials__item">
+                <a href="" class="aside-socials__link">Instagram</a>
+              </li>
+              <li class="aside-socials__item">
+                <a href="" class="aside-socials__link">Youtube</a>
+              </li>
+            </ul>
+            <button class="close-btn" type="button">
+              <svg class="close__icon" width="40" height="40">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </aside>
+        </div>
         <aside class="aside__header">
-          <span class="aside__logo"> </span>
+          <span class="aside__logo">
+            <svg class="logo__icon" width="69" height="56">
+              <use href="./images/icons/icons.svg#icon-logo"></use>
+            </svg>
+          </span>
           <ul class="aside-socials__list">
             <li class="aside-socials__item">
               <a href="" class="aside-socials__link">Instagram</a>
@@ -82,10 +140,34 @@
         <div class="about-us__thumb">
           <ul class="about-us__list">
             <li class="about-us__item">
-              <img src="" alt="" class="about-us__image" />
+              <img
+                class="about-us__image"
+                srcset="
+                  ./images/about-us1-1x.jpg 1x,
+                  ./images/about-us1-2x.jpg 2x,
+                  ./images/about-us1-3x.jpg 3x
+                "
+                sizes="100vw"
+                src="./images/about-us1-1x.jpg"
+                alt="стрижка бороды"
+                width="330"
+                height="235"
+              />
             </li>
             <li class="about-us__item">
-              <img src="" alt="" class="about-us__image" />
+              <img
+                class="about-us__image"
+                srcset="
+                  ./images/about-us2-1x.jpg 1x,
+                  ./images/about-us2-2x.jpg 2x,
+                  ./images/about-us2-3x.jpg 3x
+                "
+                sizes="100vw"
+                src="./images/about-us2-1x.jpg"
+                alt="стрижка"
+                width="330"
+                height="235"
+              />
             </li>
           </ul>
         </div>
@@ -188,7 +270,19 @@
         <h2 class="section__title">Наши мастера</h2>
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img src="" alt="" class="our-team__image" />
+            <img
+              class="our-team__image"
+              srcset="
+                ./images/john-1x.jpg 1x,
+                ./images/john-2x.jpg 2x,
+                ./images/john-3x.jpg 3x
+              "
+              sizes="100vw"
+              src="./images/john-1x.jpg"
+              alt="John"
+              width="418"
+              height="346"
+            />
             <div class="our-team__container">
               <h3 class="our-team__name">John Smith</h3>
               <p class="our-team__label">Extreme Barber</p>
@@ -209,7 +303,19 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img src="" alt="" class="our-team__image" />
+            <img
+              class="our-team__image"
+              srcset="
+                ./images/michele-1x.jpg 1x,
+                ./images/michele-2x.jpg 2x,
+                ./images/michele-3x.jpg 3x
+              "
+              sizes="100vw"
+              src="./images/michele-1x.jpg"
+              alt="Michele"
+              width="418"
+              height="346"
+            />
             <div class="our-team__container">
               <h3 class="our-team__name">Michele Doe</h3>
               <p class="our-team__label">Extreme Barber</p>
@@ -230,7 +336,19 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img src="" alt="" class="our-team__image" />
+            <img
+              class="our-team__image"
+              srcset="
+                ./images/alan-1x.jpg 1x,
+                ./images/alan-2x.jpg 2x,
+                ./images/alan-3x.jpg 3x
+              "
+              sizes="100vw"
+              src="./images/alan-1x.jpg"
+              alt="Alan"
+              width="418"
+              height="346"
+            />
             <div class="our-team__container">
               <h3 class="our-team__name">Alan Black</h3>
               <p class="our-team__label">Extreme Barber</p>
@@ -261,16 +379,64 @@
         <h2 class="section__title visually-hidden">Портфолио</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <img src="" alt="" class="portfolio__image" />
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio1-1x.jpg 1x,
+                ./images/portfolio1-2x.jpg 2x,
+                ./images/portfolio1-3x.jpg 3x
+              "
+              sizes="10vw"
+              src="./images/portfolio1-1x.jpg"
+              alt="Портфолио"
+              width="418"
+              height="360"
+            />
           </li>
           <li class="portfolio__item">
-            <img src="" alt="" class="portfolio__image" />
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio2-1x.jpg 1x,
+                ./images/portfolio2-2x.jpg 2x,
+                ./images/portfolio2-3x.jpg 3x
+              "
+              sizes="10vw"
+              src="./images/portfolio2-1x.jpg"
+              alt="Портфолио"
+              width="418"
+              height="360"
+            />
           </li>
           <li class="portfolio__item">
-            <img src="" alt="" class="portfolio__image" />
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio3-1x.jpg 1x,
+                ./images/portfolio3-2x.jpg 2x,
+                ./images/portfolio3-3x.jpg 3x
+              "
+              sizes="10vw"
+              src="./images/portfolio3-1x.jpg"
+              alt="Портфолио"
+              width="418"
+              height="360"
+            />
           </li>
           <li class="portfolio__item">
-            <img src="" alt="" class="portfolio__image" />
+            <img
+              class="portfolio__image"
+              srcset="
+                ./images/portfolio4-1x.jpg 1x,
+                ./images/portfolio4-2x.jpg 2x,
+                ./images/portfolio4-3x.jpg 3x
+              "
+              sizes="10vw"
+              src="./images/portfolio4-1x.jpg"
+              alt="Портфолио"
+              width="418"
+              height="360"
+            />
           </li>
         </ul>
       </div>
