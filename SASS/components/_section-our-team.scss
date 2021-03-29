@@ -1,0 +1,18 @@
+.section-our-team {
+  & .section__title {
+    margin-bottom: 44px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  }
+}
+.our-team__item {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+.our-team__image {
+  height: 100%;
+  width: 100%;
+}

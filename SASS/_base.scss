@@ -2,6 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   color: #303030;
+  &.mobile-menu--open {
+    overflow: hidden;
+  }
 }
 h1,
 h2,

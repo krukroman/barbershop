@@ -1,0 +1,60 @@
+.section-services {
+  background-color: #111319;
+  background-image: url(../images/mobile/services-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  & .btn--dark {
+    margin: 0 auto;
+  }
+}
+.section__title--white {
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  .section-services & {
+    margin-bottom: 44px;
+  }
+}
+.services__container {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.services__thumb--first {
+  margin-bottom: 20px;
+}
+.services__item {
+  display: flex;
+  justify-items: space-between;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  &:not(&:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.decoration {
+  display: block;
+  position: relative;
+  margin: 0 6px;
+  min-height: 100%;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
