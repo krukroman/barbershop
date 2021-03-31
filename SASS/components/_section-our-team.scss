@@ -1,4 +1,5 @@
 .section-our-team {
+  background-color: #f7f7f7;
   & .section__title {
     margin-bottom: 44px;
     font-weight: bold;
@@ -15,4 +16,41 @@
 .our-team__image {
   height: 100%;
   width: 100%;
+}
+.our-team__container {
+  padding-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.our-team__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+}
+.our-team__label {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #ff6c00;
+}
+.our-team__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px;
+}
+.socials__item {
+  margin: 10px;
+}
+.socials__link {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: fill 250ms linear;
+  &:hover,
+  &:focus {
+    fill: #ff6c00;
+  }
 }

@@ -53,10 +53,11 @@
 .section__description {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.62;
+
   letter-spacing: 0.02em;
-  &--dark {
+  &.section__description--dark {
     color: #9da4bd;
+    font-size: 16px;
+    line-height: 1.62;
   }
 }

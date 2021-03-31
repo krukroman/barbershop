@@ -1,4 +1,5 @@
 @import './base';
+@import './utils/visually-hidden';
 @import './components/page-header';
 @import './components/mobile-menu';
 @import './components/section-hero';
@@ -7,3 +8,5 @@
 @import './components/section-advantages';
 @import './components/section-our-team';
 @import './components/section-portfolio';
+@import './components/section-contacts';
+@import './components/page-footer';
