@@ -1,0 +1,71 @@
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --main-color: #303030;
+  --second-font: 'Raleway', sans-serif;
+  --second-color: #555555;
+  --third-color: rgba(157, 164, 189, 0.6);
+  --forth-color: #9da4bd;
+  --accent-color: #ff6c00;
+  --white-color: #fff;
+  --black-color: #000;
+  --first-bg-color: #111319;
+  --second-bg-color: #f7f7f7;
+  --third-bg-color: #191c26;
+}
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+span,
+img,
+svg {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+  resize: none;
+}
+address {
+  font-style: normal;
+}

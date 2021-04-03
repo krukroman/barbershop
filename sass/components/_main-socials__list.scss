@@ -1,0 +1,28 @@
+.main-socials__list {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    height: 1px;
+    width: 60px;
+    margin-right: 40px;
+    background-color: var(--main-color);
+  }
+}
+.main-socials__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+.main-socials__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-color);
+  transition: color 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

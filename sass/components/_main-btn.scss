@@ -1,0 +1,26 @@
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+  &--theme-dark {
+    color: var(--white-color);
+  }
+  &--theme-light {
+    color: var(--main-color);
+  }
+}

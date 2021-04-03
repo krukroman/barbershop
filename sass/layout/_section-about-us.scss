@@ -1,0 +1,25 @@
+.section__title--theme-light {
+  .section-about-us & {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+  }
+}
+.section__description--theme-light {
+  .section-about-us & {
+    margin-bottom: 20px;
+  }
+}
+.section__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+.section__thumb {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

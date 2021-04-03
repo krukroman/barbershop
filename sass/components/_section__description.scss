@@ -1,0 +1,11 @@
+.section__description {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.02em;
+  &--theme-dark {
+    color: var(--forth-color);
+  }
+  &--theme-light {
+    color: var(--second-color);
+  }
+}
