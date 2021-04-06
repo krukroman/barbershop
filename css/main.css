@@ -104,6 +104,12 @@ address {
   padding: 84px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
 .container {
   padding: 0 31px;
 }
@@ -520,6 +526,12 @@ address {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .section__label {
+    padding-left: 30px;
+  }
+}
+
 .section-about-us .section__title--theme-light {
   margin-bottom: 20px;
   font-size: 28px;
@@ -542,6 +554,14 @@ address {
 @media screen and (max-width: 767px) {
   .section__thumb {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__thumb {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
