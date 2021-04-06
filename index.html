@@ -388,7 +388,7 @@
         </p>
         <h2 class="visually-hidden">Портфолио</h2>
         <ul class="portfolio__list">
-          <li class="portfolioi__item">
+          <li class="portfolio__item">
             <img
               srcset="
                 ./images/portfolio1-1x.jpg 1x,
@@ -402,7 +402,7 @@
               class="portfolio__image"
             />
           </li>
-          <li class="portfolioi__item">
+          <li class="portfolio__item">
             <img
               srcset="
                 ./images/portfolio2-1x.jpg 1x,
@@ -416,7 +416,7 @@
               class="portfolio__image"
             />
           </li>
-          <li class="portfolioi__item">
+          <li class="portfolio__item">
             <img
               srcset="
                 ./images/portfolio3-1x.jpg 1x,
@@ -430,7 +430,7 @@
               class="portfolio__image"
             />
           </li>
-          <li class="portfolioi__item">
+          <li class="portfolio__item">
             <img
               srcset="
                 ./images/portfolio4-1x.jpg 1x,
@@ -467,7 +467,10 @@
               placeholder="телефон*"
               required
             />
-            <textarea class="form__comment" placeholder="сообщение"></textarea>
+            <textarea
+              class="form__input form__comment"
+              placeholder="сообщение"
+            ></textarea>
             <button type="button" class="main-btn main-btn--theme-dark">
               отправить
             </button>
@@ -494,7 +497,10 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__link" href="mailto:barbershop@email.com">
+                <a
+                  class="address__link address__mail"
+                  href="mailto:barbershop@email.com"
+                >
                   <svg class="adrress__icon" width="24" height="24">
                     <use href="./images/icons/icons.svg#icon-mail"></use>
                   </svg>
@@ -529,53 +535,57 @@
     <!-- mobile menu -->
     <div class="backdrop" data-mobile-menu>
       <aside class="aside">
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a href="" class="mobile-nav__link">О нас</a>
+        <div class="mobile-container">
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">О нас</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Услуги и цены</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Мастера</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-actions__list">
+            <li class="mobile-actions__item">
+              <a href="tel:+380441111111" class="mobile-actions__tel"
+                >+38 044 111 11 11</a
+              >
             </li>
-            <li class="mobile-nav__item">
-              <a href="" class="mobile-nav__link">Услуги и цены</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="" class="mobile-nav__link">Мастера</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="" class="mobile-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="mobile-actions__list">
-          <li class="mobile-actions__item">
-            <a href="tel:+380441111111" class="mobile-actions__tel"
-              >+38 044 111 11 11</a
-            >
-          </li>
-          <li class="mobile-actions__item">
-            <a href="" class="main-btn main-btn--theme-light">онлайн-запись</a>
-          </li>
-        </ul>
-        <div class="mobile-socials__wraper">
-          <ul class="mobile-socials__list">
-            <li class="mobile-socials__item">
-              <a href="" class="mobile-socials__link">Instagram</a>
-            </li>
-            <li class="mobile-socials__item">
-              <a href="" class="mobile-socials__link">Youtube</a>
+            <li class="mobile-actions__item">
+              <a href="" class="main-btn main-btn--theme-light"
+                >онлайн-запись</a
+              >
             </li>
           </ul>
+          <div class="mobile-socials__wraper">
+            <ul class="mobile-socials__list">
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">Instagram</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="menu-btn close-menu-btn"
+            type="button"
+            aria-label="закрыть мобильное меню"
+            aria-expanded="false"
+            data-mobile-menu-close
+          >
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
-        <button
-          class="menu-btn close-menu-btn"
-          type="button"
-          aria-label="закрыть мобильное меню"
-          aria-expanded="false"
-          data-mobile-menu-close
-        >
-          <svg class="menu__icon" width="40" height="40">
-            <use href="./images/icons/icons.svg#icon-close"></use>
-          </svg>
-        </button>
       </aside>
     </div>
     <script src="./js/mobile-menu.js"></script>

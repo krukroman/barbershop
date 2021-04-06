@@ -28,6 +28,9 @@
   text-align: center;
   height: 133px;
   flex-basis: calc((100% - 30px) / 2);
+  @media screen and (max-width: 479px) {
+    flex-basis: calc((100% - 45px) / 2);
+  }
   background-color: var(--second-bg-color);
   &:nth-child(odd) {
     margin-right: 30px;

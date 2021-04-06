@@ -1,0 +1,18 @@
+.section-portfolio {
+}
+.section__subtitle--theme-light {
+  .section-portfolio & {
+    margin-bottom: 44px;
+  }
+}
+.portfolio__list {
+}
+.portfolio__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.portfolio__image {
+  height: 100%;
+  width: 100%;
+}

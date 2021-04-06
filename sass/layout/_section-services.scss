@@ -20,6 +20,9 @@
       rgba(23, 26, 36, 0.2) 100%
     );
   }
+  @media screen and (max-width: 479px) {
+    padding: 30px 15px;
+  }
 }
 .services__list {
   &--left {
