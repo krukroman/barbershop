@@ -356,7 +356,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .nav {
-    margin-top: 12px;
+    margin-top: 20px;
     margin-left: 64px;
   }
 }
@@ -406,6 +406,7 @@ address {
 }
 
 .page-header .main-btn--theme-dark {
+  margin-top: 8px;
   margin-bottom: 20px;
 }
 
