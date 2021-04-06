@@ -332,6 +332,12 @@ address {
 
 .menu-btn {
   fill: var(--white-color);
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -350,6 +356,23 @@ address {
     background-position: bottom;
     background-repeat: no-repeat;
   }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/mobile/header1-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/mobile/header1-2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/mobile/header1-3x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/mobile/header1-3x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
   .section-hero .container--flexed {
     padding-right: 143px;
   }
@@ -402,6 +425,18 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-services {
+    background-image: url(../images/mobile/services-2x.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .section-services {
+    background-image: url(../images/mobile/services-3x.png);
+  }
 }
 
 .section-services .section__title {
@@ -705,6 +740,18 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 84px 31px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts-wraper {
+    background-image: url(../images/mobile/contacts-2x.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .contacts-wraper {
+    background-image: url(../images/mobile/contacts-3x.png);
+  }
 }
 
 @media screen and (max-width: 479px) {

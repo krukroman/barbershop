@@ -64,6 +64,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 84px 31px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/contacts-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/contacts-3x.png);
+  }
   @media screen and (max-width: 479px) {
     padding: 84px 15px;
   }

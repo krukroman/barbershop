@@ -4,6 +4,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/services-2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/services-3x.png);
+  }
 }
 .section__title {
   .section-services & {

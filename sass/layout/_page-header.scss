@@ -24,6 +24,11 @@
 }
 .menu-btn {
   fill: var(--white-color);
+  transition: fill 250ms linear;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
