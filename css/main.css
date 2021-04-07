@@ -1597,7 +1597,7 @@ address {
   position: absolute;
   top: 0;
   right: 0;
-  height: auto;
+  min-height: 100vh;
   width: 70vw;
   padding: 48px 0;
   -webkit-transform: translateX(100%);
