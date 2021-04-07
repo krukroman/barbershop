@@ -3,16 +3,34 @@
 .section__subtitle--theme-light {
   .section-portfolio & {
     margin-bottom: 44px;
+    @media screen and (max-width: 767px) {
+      line-height: 1.91;
+    }
   }
 }
 .portfolio__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .portfolio__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 .portfolio__image {
   height: 100%;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 360px;
+    object-fit: cover;
+  }
 }

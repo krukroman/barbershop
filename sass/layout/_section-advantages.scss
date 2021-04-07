@@ -2,7 +2,15 @@
 }
 .container--flexed {
   .section-advantages & {
-    display: block;
+    flex-direction: column;
+  }
+}
+.section__label {
+  .section-advantages & {
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+      padding-right: 190px;
+    }
   }
 }
 .section__title {
@@ -12,7 +20,14 @@
 }
 .section__description {
   .section-advantages & {
+    font-size: 18px;
+    line-height: 1.67;
     margin-bottom: 44px;
+  }
+}
+.section__advantages {
+  @media screen and (min-width: 768px) {
+    padding-left: 240px;
   }
 }
 .advantages__list {

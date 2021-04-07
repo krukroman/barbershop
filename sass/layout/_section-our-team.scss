@@ -1,6 +1,13 @@
 .section-team {
   background-color: var(--second-bg-color);
 }
+.container {
+  @media screen and (min-width: 768px) {
+    .section-team & {
+      padding: 0 159px;
+    }
+  }
+}
 .section__title--theme-light {
   .section-team & {
     margin-bottom: 44px;
@@ -16,6 +23,11 @@
 .team__image {
   height: 100%;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 346px;
+    overflow: hidden;
+    object-fit: cover;
+  }
 }
 .team__label {
   padding-top: 30px;

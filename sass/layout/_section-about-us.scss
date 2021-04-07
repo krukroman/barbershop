@@ -31,3 +31,15 @@
     order: -1;
   }
 }
+.thumb__list {
+}
+.thumb__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.thumb__image {
+  height: 235px;
+  width: 330px;
+  object-fit: cover;
+}
