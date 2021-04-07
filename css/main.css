@@ -925,9 +925,21 @@ address {
   padding: 84px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .form-wraper {
+    padding: 100px 39px;
+  }
+}
+
 .form-wraper .section__title--theme-dark {
   margin-bottom: 44px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .form-wraper .section__title--theme-dark {
+    text-align: left;
+  }
 }
 
 .form {
@@ -937,6 +949,20 @@ address {
 @media screen and (max-width: 479px) {
   .form {
     padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1004,13 +1030,36 @@ address {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .form__input {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
 .form__comment {
   margin-bottom: 44px;
   height: 76px;
 }
 
+@media screen and (min-width: 768px) {
+  .form__comment {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .section-contacts .main-btn--theme-dark {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacts .main-btn--theme-dark {
+    margin: 0;
+  }
 }
 
 .contacts-wraper {
@@ -1039,9 +1088,29 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-wraper {
+    padding: 100px 39px;
+  }
+}
+
 .contacts-wraper .section__title--theme-dark {
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-wraper .section__title--theme-dark {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .address {
@@ -1050,6 +1119,15 @@ address {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--forth-color);
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-right: 31px;
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -1065,8 +1143,23 @@ address {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .address_wraper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .adrress__icon {
   margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .address__text {
+    -ms-flex-preferred-size: 220px;
+        flex-basis: 220px;
+  }
 }
 
 .address__link {
@@ -1083,9 +1176,20 @@ address {
   text-decoration: underline;
 }
 
+.contacts-wraper .section__description--theme-dark {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
 .page-footer {
   padding: 44px 0;
   background-color: var(--second-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding: 56px 0;
+  }
 }
 
 .page-footer .container--flexed {
@@ -1095,10 +1199,31 @@ address {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer .container--flexed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .page-footer .main-socials__list {
   margin-bottom: 20px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .main-socials__list {
+    margin: 0;
+  }
 }
 
 .copyright {
@@ -1107,6 +1232,14 @@ address {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--forth-color);
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 .backdrop {

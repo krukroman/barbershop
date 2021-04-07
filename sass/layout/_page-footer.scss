@@ -1,16 +1,27 @@
 .page-footer {
   padding: 44px 0;
   background-color: var(--second-bg-color);
+  @media screen and (min-width: 768px) {
+    padding: 56px 0;
+  }
 }
 .container--flexed {
   .page-footer & {
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }
 .main-socials__list {
   .page-footer & {
     margin-bottom: 20px;
     align-self: flex-end;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
 }
 .copyright {
@@ -19,4 +30,7 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--forth-color);
+  @media screen and (min-width: 768px) {
+    order: -1;
+  }
 }

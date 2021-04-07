@@ -10,17 +10,29 @@
 }
 .form-wraper {
   padding: 84px 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 39px;
+  }
 }
 .section__title--theme-dark {
   .form-wraper & {
     margin-bottom: 44px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 }
 .form {
   padding: 0 31px;
   @media screen and (max-width: 479px) {
     padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .form__input {
@@ -48,14 +60,24 @@
       color: var(--white-color);
     }
   }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .form__comment {
   margin-bottom: 44px;
   height: 76px;
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
 }
 .main-btn--theme-dark {
   .section-contacts & {
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
 }
 .contacts-wraper {
@@ -77,11 +99,22 @@
   @media screen and (max-width: 479px) {
     padding: 84px 15px;
   }
+  @media screen and (min-width: 768px) {
+    padding: 100px 39px;
+  }
 }
 .section__title--theme-dark {
   .contacts-wraper & {
     margin-bottom: 40px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+.contacts-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 .address {
@@ -90,6 +123,11 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--forth-color);
+  @media screen and (min-width: 768px) {
+    margin-right: 31px;
+    margin-bottom: 0;
+    flex-basis: 330px;
+  }
 }
 .address__list {
 }
@@ -101,9 +139,17 @@
 .address_wraper {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
 .adrress__icon {
   margin-right: 16px;
+}
+.address__text {
+  @media screen and (min-width: 768px) {
+    flex-basis: 220px;
+  }
 }
 .address__link {
   display: flex;
@@ -112,4 +158,10 @@
 }
 .address__mail {
   text-decoration: underline;
+}
+.section__description--theme-dark {
+  .contacts-wraper & {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
