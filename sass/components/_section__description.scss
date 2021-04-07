@@ -8,4 +8,8 @@
   &--theme-light {
     color: var(--second-color);
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.73;
+  }
 }
