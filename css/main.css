@@ -1049,6 +1049,12 @@ address {
   line-height: 1.36;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages__text {
+    padding: 0 20px;
+  }
+}
+
 .section-team {
   background-color: var(--second-bg-color);
 }
