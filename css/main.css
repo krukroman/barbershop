@@ -814,6 +814,12 @@ address {
   margin-bottom: 44px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    margin: 0 auto;
+  }
+}
+
 .team__item:not(:last-child) {
   margin-bottom: 64px;
 }
@@ -825,7 +831,9 @@ address {
 
 @media screen and (min-width: 768px) {
   .team__image {
+    margin: 0 auto;
     height: 346px;
+    width: 450px;
     overflow: hidden;
     -o-object-fit: cover;
        object-fit: cover;
