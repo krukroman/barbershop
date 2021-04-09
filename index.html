@@ -21,7 +21,7 @@
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="container container--flexed">
+      <div class="container container--flexed header-container--flexed">
         <a href="" class="logo" aria-label="logo">
           <svg class="logo__icon" width="69" height="56">
             <use href="./images/icons/icons.svg#icon-logo"></use>
@@ -44,7 +44,9 @@
             >
           </li>
           <li class="actions__item">
-            <a href="" class="main-btn main-btn--theme-dark">онлайн-запись</a>
+            <a href="" class="main-btn main-btn--theme-dark header-btn"
+              >онлайн-запись</a
+            >
           </li>
         </ul>
         <button
@@ -62,13 +64,15 @@
     </header>
     <!-- hero -->
     <section class="section section-hero">
-      <div class="container container--flexed">
+      <div class="container container--flexed hero-container">
         <div class="hero-side hero-side--right">
           <p class="section__subtitle section__subtitle--theme-dark" lang="en">
             A hair salon for men in Kyiv
           </p>
           <h1 class="page-title" lang="en">BarberShop</h1>
-          <p class="section__description section__description--theme-dark">
+          <p
+            class="section__description section__description--theme-dark hero-description"
+          >
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
           </p>
@@ -88,12 +92,16 @@
     <!-- about us -->
     <section class="section section-about-us">
       <div class="container container--flexed">
-        <div class="section__label">
+        <div class="about-us__label">
           <p class="section__subtitle section__subtitle--theme-light">о нас</p>
-          <h2 class="section__title section__title--theme-light">
+          <h2
+            class="section__title section__title--theme-light about-us__title"
+          >
             Лучший Барбершоп твоего города
           </h2>
-          <p class="section__description section__description--theme-light">
+          <p
+            class="section__description section__description--theme-light about-us__description"
+          >
             Если ты хочешь добавить в свой образ больше уверенносtти – тебе
             точно к нам.
           </p>
@@ -142,12 +150,14 @@
     </section>
     <!-- Services -->
     <section class="section section-services">
-      <div class="container">
+      <div class="container services-container">
         <p class="section__subtitle section__subtitle--theme-dark">
           Проведи время в компании лучших мастеров
         </p>
-        <h2 class="section__title section__title--theme-dark">Услуги и цены</h2>
-        <div class="services__wraper">
+        <h2 class="section__title section__title--theme-dark services__title">
+          Услуги и цены
+        </h2>
+        <div class="services__wrapper">
           <ul class="services__list services__list--left">
             <li class="services__item">
               <span>Мужская стрижка</span
@@ -185,25 +195,31 @@
             </li>
           </ul>
         </div>
-        <a href="" class="main-btn main-btn--theme-dark">онлайн-запись</a>
+        <a href="" class="main-btn main-btn--theme-dark services-btn"
+          >онлайн-запись</a
+        >
       </div>
     </section>
     <!-- Advantages -->
     <section class="section section-advantages">
-      <div class="container container--flexed">
-        <div class="section__label">
+      <div class="container container--flexed advantages-container">
+        <div class="advantages__label">
           <p class="section__subtitle section__subtitle--theme-light">
             старая традиционная школа
           </p>
-          <h2 class="section__title section__title--theme-light">
+          <h2
+            class="section__title section__title--theme-light advantages__title"
+          >
             Почему приходят именно к нам?
           </h2>
-          <p class="section__description section__description--theme-light">
+          <p
+            class="section__description section__description--theme-light advantages__description"
+          >
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
             прочувствовать, чем 10 раз прочитать.
           </p>
         </div>
-        <div class="section__advantages">
+        <div class="advantages-wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
               <p class="advantages__number">600</p>
@@ -227,11 +243,13 @@
     </section>
     <!-- Our team -->
     <section class="section section-team">
-      <div class="container">
+      <div class="container team-container">
         <p class="section__subtitle section__subtitle--theme-light">
           для настоящих ценителей атмосферы
         </p>
-        <h2 class="section__title section__title--theme-light">Наши мастера</h2>
+        <h2 class="section__title section__title--theme-light team__title">
+          Наши мастера
+        </h2>
         <ul class="team__list">
           <li class="team__item">
             <img
@@ -383,7 +401,9 @@
     <!-- Portfolio -->
     <section class="section section-portfolio">
       <div class="container">
-        <p class="section__subtitle section__subtitle--theme-light">
+        <p
+          class="section__subtitle section__subtitle--theme-light portfolio__subtitle"
+        >
           На латинском языке “барба” означает “борода”
         </p>
         <h2 class="visually-hidden">Портфолио</h2>
@@ -449,9 +469,11 @@
     </section>
     <!-- Contacts -->
     <section class="section section-contacts">
-      <div class="container container--flexed">
-        <div class="form-wraper">
-          <h2 class="section__title section__title--theme-dark">
+      <div class="container container--flexed contacts-container">
+        <div class="form-wrapper">
+          <h2
+            class="section__title section__title--theme-dark form-wrapper__title"
+          >
             Онлайн-запись
           </h2>
           <form class="form">
@@ -471,19 +493,26 @@
               class="form__input form__comment"
               placeholder="сообщение"
             ></textarea>
-            <button type="button" class="main-btn main-btn--theme-dark">
+            <button
+              type="submit"
+              class="main-btn main-btn--theme-dark form-btn"
+            >
               отправить
             </button>
           </form>
         </div>
         <div class="contacts-bg">
-          <div class="contacts-wraper">
-            <h2 class="section__title section__title--theme-dark">Контакты</h2>
+          <div class="contacts-wrapper">
+            <h2
+              class="section__title section__title--theme-dark contacts-wrapper__title"
+            >
+              Контакты
+            </h2>
             <div class="contacts-box">
               <address class="address">
                 <ul class="address__list">
                   <li class="address__item">
-                    <div class="address_wraper">
+                    <div class="address_wrapper">
                       <svg class="adrress__icon" width="24" height="24">
                         <use href="./images/icons/icons.svg#icon-map-pin"></use>
                       </svg>
@@ -518,7 +547,7 @@
                   время работы
                 </p>
                 <p
-                  class="section__description section__description--theme-dark"
+                  class="section__description section__description--theme-dark contacts-wrapper__description"
                 >
                   Ежедневно с 9:00 до 22:00
                 </p>
@@ -530,8 +559,8 @@
     </section>
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="container container--flexed">
-        <ul class="main-socials__list">
+      <div class="container container--flexed footer-container">
+        <ul class="main-socials__list footer-socials__list">
           <li class="main-socials__item">
             <a href="" class="main-socials__link">Instagram</a>
           </li>
@@ -574,7 +603,7 @@
               >
             </li>
           </ul>
-          <div class="mobile-socials__wraper">
+          <div class="mobile-socials__wrapper">
             <ul class="mobile-socials__list">
               <li class="mobile-socials__item">
                 <a href="" class="mobile-socials__link">Instagram</a>

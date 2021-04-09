@@ -1,9 +1,7 @@
-.section__subtitle--theme-light {
-  .section-portfolio & {
-    margin-bottom: 44px;
-    @media screen and (max-width: 767px) {
-      line-height: 1.91;
-    }
+.portfolio__subtitle {
+  margin-bottom: 44px;
+  @media screen and (max-width: 767px) {
+    line-height: 1.91;
   }
 }
 .portfolio__list {

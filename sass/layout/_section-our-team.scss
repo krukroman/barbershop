@@ -1,17 +1,13 @@
 .section-team {
   background-color: var(--second-bg-color);
 }
-.container {
+.team-container {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .section-team & {
-      padding: 0 159px;
-    }
+    padding: 0 159px;
   }
 }
-.section__title--theme-light {
-  .section-team & {
-    margin-bottom: 44px;
-  }
+.team__title {
+  margin-bottom: 44px;
 }
 .team__list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {

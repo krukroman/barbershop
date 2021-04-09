@@ -2,17 +2,15 @@
   background-color: var(--third-bg-color);
   padding: 0;
 }
-.container--flexed {
-  .section-contacts & {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-    }
+.contacts-container {
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
-.form-wraper {
+.form-wrapper {
   padding: 84px 15px;
   @media screen and (min-width: 480px) {
     margin: 0 auto;
@@ -28,13 +26,11 @@
     width: 51%;
   }
 }
-.section__title--theme-dark {
-  .form-wraper & {
-    margin-bottom: 44px;
-    text-align: center;
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
+.form-wrapper__title {
+  margin-bottom: 44px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
 }
 .form {
@@ -82,12 +78,10 @@
     flex-basis: 100%;
   }
 }
-.main-btn--theme-dark {
-  .section-contacts & {
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-      margin: 0;
-    }
+.form-btn {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
 }
 .contacts-bg {
@@ -114,7 +108,7 @@
     width: 49%;
   }
 }
-.contacts-wraper {
+.contacts-wrapper {
   margin: 0 auto;
   padding: 0 15px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -124,13 +118,11 @@
     width: 768px;
   }
 }
-.section__title--theme-dark {
-  .contacts-wraper & {
-    margin-bottom: 40px;
-    text-align: center;
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
+.contacts-wrapper__title {
+  margin-bottom: 40px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
 }
 .contacts-box {
@@ -156,7 +148,7 @@
     margin-bottom: 20px;
   }
 }
-.address_wraper {
+.address_wrapper {
   display: flex;
   align-items: center;
   @media screen and (min-width: 768px) {
@@ -179,9 +171,7 @@
 .address__mail {
   text-decoration: underline;
 }
-.section__description--theme-dark {
-  .contacts-wraper & {
-    font-size: 18px;
-    line-height: 1.67;
-  }
+.contacts-wrapper__description {
+  font-size: 18px;
+  line-height: 1.67;
 }

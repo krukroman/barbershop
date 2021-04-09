@@ -1,4 +1,4 @@
-.section__label {
+.about-us__label {
   @media screen and (min-width: 768px) {
     margin-left: 30px;
   }
@@ -7,19 +7,15 @@
   }
 }
 
-.section__title--theme-light {
-  .section-about-us & {
-    margin-bottom: 20px;
-    @media screen and (max-width: 1199px) {
-      font-size: 28px;
-      line-height: 1.18;
-    }
+.about-us__title {
+  margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
-.section__description--theme-light {
-  .section-about-us & {
-    margin-bottom: 20px;
-  }
+.about-us__description {
+  margin-bottom: 20px;
 }
 .section__text {
   margin-bottom: 40px;
