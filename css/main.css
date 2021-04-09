@@ -102,7 +102,6 @@ address {
 
 .section {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 84px 0;
 }
 
@@ -1250,7 +1249,7 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-wrapper {
-    padding: 100px 15px;
+    padding: 100px 39px;
     width: 768px;
   }
 }
@@ -1430,7 +1429,14 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-wrapper {
+    padding: 0 39px;
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-wrapper {
+    padding: 0;
   }
 }
 
@@ -1523,8 +1529,6 @@ address {
 
 .page-footer {
   padding: 44px 0;
-  margin: 0 auto;
-  max-width: 1200px;
   background-color: var(--second-bg-color);
 }
 

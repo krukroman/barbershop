@@ -20,7 +20,7 @@
     width: 480px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 100px 15px;
+    padding: 100px 39px;
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
@@ -118,7 +118,11 @@
     width: 480px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 39px;
     width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 }
 .contacts-wrapper__title {
