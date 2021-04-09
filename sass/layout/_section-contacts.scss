@@ -17,6 +17,7 @@
   padding: 84px 15px;
   @media screen and (min-width: 480px) {
     margin: 0 auto;
+    padding: 84px 31px;
     width: 480px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -24,9 +25,9 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0 0 0 auto;
-    padding: 130px 40px 130px 40px;
-    width: 612px;
+    margin: 0;
+    padding: 130px 40px 130px 55px;
+    flex-grow: 1;
   }
 }
 .form-wrapper__title {
@@ -108,7 +109,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 130px 0 130px 100px;
-    width: 49%;
+    width: 48%;
   }
 }
 .contacts-wrapper {
@@ -122,7 +123,7 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 0;
+    padding: 0 55px 0 0;
   }
 }
 .contacts-wrapper__title {

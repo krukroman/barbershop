@@ -1,18 +1,16 @@
 .container {
   margin: 0 auto;
-  padding: 0 31px;
-  @media screen and (max-width: 479px) {
-    padding: 0 15px;
-  }
+  padding: 0 15px;
   @media screen and (min-width: 480px) {
+    padding: 0 31px;
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     padding: 0 39px;
     width: 768px;
   }
-  @media screen and (min-width: 1199px) {
-    padding: 0 15px;
+  @media screen and (min-width: 1200px) {
+    padding: 0 55px;
     width: 1200px;
   }
   &--flexed {

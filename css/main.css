@@ -119,17 +119,12 @@ address {
 
 .container {
   margin: 0 auto;
-  padding: 0 31px;
-}
-
-@media screen and (max-width: 479px) {
-  .container {
-    padding: 0 15px;
-  }
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
+    padding: 0 31px;
     width: 480px;
   }
 }
@@ -141,9 +136,9 @@ address {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .container {
-    padding: 0 15px;
+    padding: 0 55px;
     width: 1200px;
   }
 }
@@ -770,7 +765,6 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-services {
-    width: 768px;
     background-image: url(../images/tablet/services-1x.png);
   }
 }
@@ -802,12 +796,6 @@ address {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
   .section-services {
     background-image: url(../images/desktop/services-3x.png);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .services-container {
-    width: 768px;
   }
 }
 
@@ -926,14 +914,16 @@ address {
 
 @media screen and (min-width: 768px) {
   .advantages__label {
-    padding-right: 190px;
+    max-width: 500px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__label {
-    padding: 0;
-    margin-left: 130px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 30px;
   }
 }
 
@@ -945,12 +935,17 @@ address {
   font-size: 18px;
   line-height: 1.67;
   margin-bottom: 44px;
-  max-width: 500px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .advantages__description {
+    max-width: 390px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-wrapper {
-    padding-left: 240px;
+    padding-left: 288px;
   }
 }
 
@@ -959,7 +954,7 @@ address {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    padding: 0;
+    padding: 0 100px;
   }
 }
 
@@ -969,17 +964,6 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 
 .advantages__item {
@@ -998,23 +982,9 @@ address {
           justify-content: center;
   text-align: center;
   height: 133px;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
+  -ms-flex-preferred-size: calc((100% - 2 * 15px) / 2);
+      flex-basis: calc((100% - 2 * 15px) / 2);
   background-color: var(--second-bg-color);
-}
-
-@media screen and (max-width: 479px) {
-  .advantages__item {
-    -ms-flex-preferred-size: calc((100% - 45px) / 2);
-        flex-basis: calc((100% - 45px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__item {
-    -ms-flex-preferred-size: 170px;
-        flex-basis: 170px;
-  }
 }
 
 .advantages__item:nth-child(odd) {
@@ -1046,16 +1016,14 @@ address {
 }
 
 .advantages__text {
-  padding: 0 33px;
+  max-width: 122px;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.37;
 }
 
-@media screen and (min-width: 1200px) {
-  .advantages__text {
-    padding: 0 20px;
-  }
+.advantages__text--last {
+  max-width: 130px;
 }
 
 .section-team {
@@ -1243,6 +1211,7 @@ address {
 @media screen and (min-width: 480px) {
   .form-wrapper {
     margin: 0 auto;
+    padding: 84px 31px;
     width: 480px;
   }
 }
@@ -1256,9 +1225,11 @@ address {
 
 @media screen and (min-width: 1200px) {
   .form-wrapper {
-    margin: 0 0 0 auto;
-    padding: 130px 40px 130px 40px;
-    width: 612px;
+    margin: 0;
+    padding: 130px 40px 130px 55px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -1412,7 +1383,7 @@ address {
 @media screen and (min-width: 1200px) {
   .contacts-bg {
     padding: 130px 0 130px 100px;
-    width: 49%;
+    width: 48%;
   }
 }
 
@@ -1436,7 +1407,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .contacts-wrapper {
-    padding: 0;
+    padding: 0 55px 0 0;
   }
 }
 
