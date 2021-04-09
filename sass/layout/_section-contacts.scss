@@ -1,6 +1,9 @@
 .section-contacts {
   background-color: var(--third-bg-color);
   padding: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
 }
 .contacts-container {
   flex-direction: column;
@@ -20,10 +23,10 @@
     padding: 100px 15px;
     width: 768px;
   }
-  @media screen and (min-width: 1199px) {
-    margin: 0;
-    padding: 130px 40px 130px 55px;
-    width: 51%;
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 auto;
+    padding: 130px 40px 130px 40px;
+    width: 612px;
   }
 }
 .form-wrapper__title {
@@ -103,7 +106,7 @@
   @media screen and (min-width: 768px) {
     padding: 100px 0;
   }
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     padding: 130px 0 130px 100px;
     width: 49%;
   }

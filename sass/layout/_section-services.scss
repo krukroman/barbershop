@@ -14,7 +14,8 @@
     (min-resolution: 3dppx) {
     background-image: url(../images/mobile/services-3x.png);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
     background-image: url(../images/tablet/services-1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

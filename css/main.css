@@ -101,6 +101,8 @@ address {
 }
 
 .section {
+  margin: 0 auto;
+  max-width: 1200px;
   padding: 84px 0;
 }
 
@@ -767,19 +769,20 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-services {
+    width: 768px;
     background-image: url(../images/tablet/services-1x.png);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .section-services {
     background-image: url(../images/tablet/services-2x.png);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
   .section-services {
     background-image: url(../images/tablet/services-3x.png);
   }
@@ -943,6 +946,7 @@ address {
   font-size: 18px;
   line-height: 1.67;
   margin-bottom: 44px;
+  max-width: 500px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1209,6 +1213,12 @@ address {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-contacts {
+    width: 768px;
+  }
+}
+
 .contacts-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1245,11 +1255,11 @@ address {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .form-wrapper {
-    margin: 0;
-    padding: 130px 40px 130px 55px;
-    width: 51%;
+    margin: 0 0 0 auto;
+    padding: 130px 40px 130px 40px;
+    width: 612px;
   }
 }
 
@@ -1400,7 +1410,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .contacts-bg {
     padding: 130px 0 130px 100px;
     width: 49%;
@@ -1513,6 +1523,8 @@ address {
 
 .page-footer {
   padding: 44px 0;
+  margin: 0 auto;
+  max-width: 1200px;
   background-color: var(--second-bg-color);
 }
 
