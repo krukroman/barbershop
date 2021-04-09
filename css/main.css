@@ -152,7 +152,6 @@ address {
 .section__title {
   font-family: var(--second-font);
   font-weight: bold;
-  font-weight: bold;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
@@ -1036,7 +1035,7 @@ address {
   }
 }
 
-.team__title {
+.section-team__title {
   margin-bottom: 44px;
 }
 
