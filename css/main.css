@@ -1035,10 +1035,6 @@ address {
   }
 }
 
-.section-team__title {
-  margin-bottom: 44px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     margin: 0 auto;
